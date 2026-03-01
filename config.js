@@ -1,21 +1,19 @@
 /**
  * 飞书机器人配置
- * 支持环境变量配置（推荐用于 Vercel）
+ * 使用环境变量（更安全）
  */
 
 const config = {
-  // 飞书应用凭证
-  // 方式1: 环境变量（推荐，用于 Vercel）
-  // 方式2: 直接填写（用于本地开发）
+  // 飞书应用凭证 - 使用环境变量
   feishu: {
-    appId: process.env.FEISHU_APP_ID || 'YOUR_FEISHU_APP_ID',
-    appSecret: process.env.FEISHU_APP_SECRET || 'YOUR_FEISHU_APP_SECRET',
-    verificationToken: process.env.FEISHU_VERIFICATION_TOKEN || 'YOUR_VERIFICATION_TOKEN'
+    appId: process.env.FEISHU_APP_ID || 'cli_a9142e4e2778dbcc',
+    appSecret: process.env.FEISHU_APP_SECRET || 'uTWvDkFI8Fhvuml3HzVwQdtgC2w3brik',
+    verificationToken: process.env.FEISHU_VERIFICATION_TOKEN || 'Lv6yuAEFqwycKbLKru3XbftsrnmJ2MmX'
   },
 
-  // MiniMax Agent 配置
+  // MiniMax Agent 配置 - 使用环境变量
   minimax: {
-    apiKey: process.env.MINIMAX_API_KEY || 'YOUR_MINIMAX_API_KEY',
+    apiKey: process.env.MINIMAX_API_KEY || 'sk-api-qTv0JmHHJrXdyWkmvL--43gbYIY_05LIS-GF2zPJajPw63QrMJTMRz9-wzFcNg0K5M75_ngPEgupyRmNbT0HhnxUoxeu3w3RY0ECE-_GRuMq0g7K_yqomBU',
     baseUrl: process.env.MINIMAX_BASE_URL || 'https://api.minimax.chat/v1',
     model: process.env.MINIMAX_MODEL || 'abab6.5s-chat'
   },
