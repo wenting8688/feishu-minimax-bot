@@ -1,0 +1,15 @@
+{
+  "name": "feishu-minimax-bot",
+  "version": "1.0.0",
+  "description": "飞书机器人 - 集成 MiniMax Agent 智能对话能力",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "crypto": "^1.0.1",
+    "form-data": "^4.0.0"
+  }
+}
